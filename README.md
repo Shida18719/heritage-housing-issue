@@ -1,12 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Heritage Housing Issues
 
-## Codeanywhere Template Instructions
+![]()
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+Heritage Housing Issues is a Data Analytics and Machine Learning Web App to predict the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
 
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
+Link to deployed site: 
+
+---
+
+
+## CONTENTS
+
+* [Dataset](#dataset)
+* [Business Requirements](#business-requirements)
+* [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks) 
+* [ML Business Case](#ml-business-case)
+* [Hypothesis and how to validate?](#hypothesis-and-how-to-validate?)
+* [Dashboard Design](#dashboard-design)
+* [Bugs](#bugs)
+* [Deployment](#deployment)  
+* [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries) 
+* [Credits](#credits)
+  * [Libraries and Packages](#libraries-and-packages) 
+
+<hr>
+
 
 ## How to use this repo
 
