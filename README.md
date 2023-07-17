@@ -64,15 +64,6 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-
-
-
-
-
-
-
-
-
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -105,9 +96,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 | YearRemodAdd  | Remodel date (same as construction date if no remodelling or additions) | 1950 - 2010                                                                                                                                                             |
 | SalePrice     | Sale Price                                                              | 34900 - 755000                                                                                                                                                          |
 
-
 ---
-
 
 ## Business Requirements
 
@@ -120,13 +109,11 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ---
 
-
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 - List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
 ---
-
 
 ## ML Business Case
 
@@ -137,58 +124,109 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Hypothesis and Validation
 
 **Hypothesis 1:**
+
 - The size of a house, as measured by the square footage, is positively correlated with its sale price.
   - We were able to observe if this feature is a factor that influences price.
 
-**Validation process:** 
+**Validation process:**
 
- - This hypothesis suggests that larger houses tend to have higher sale prices.
- - This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices. 
-- We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns. 
+- This hypothesis suggests that larger houses tend to have higher sale prices.
+- This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
+- We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:** 
+**Interpretaion:**
 
-- Analysis indicates that the size of the house has a relatively high correlation to the house sale price.  
+- Analysis indicates that the size of the house has a relatively high correlation to the house sale price.
 
 ---
 
-**Hypothesis 2:** 
-- "The rating of the house in quality has a significant positive effect on house prices." 
+**Hypothesis 2:**
+
+- "The rating of the house in quality has a significant positive effect on house prices."
   - We were able to observe if this feature is a factor that influences price.
 
-**Validation process:** 
- 
-- This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices. 
+**Validation process:**
+
+- This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
 - We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:** 
+**Interpretaion:**
 
 - Analysis indicates that the quality of the house has a relatively high correlation to the house sale price.
 
 ---
 
 **Hypothesis 3:**
+
 - The most recently constructed house, has significant positive correlation with the sale price.
-    - we were able to observe if this feature is a factor that influences price.
+  - we were able to observe if this feature is a factor that influences price.
 
-**Validation process:** 
+**Validation process:**
 
-- This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices. 
+- This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
 - We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:** 
+**Interpretaion:**
 
 - Analysis indicates that the quality of the house has a relatively high correlation to the house sale price.
 
-
 ---
-
-
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-- Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+- The dashboard is made up of 5 pages, and split into non-technical and technical user. The first three pages are non-technical, while the last two are technical.
+
+### Page 1: Project Summary
+
+- Summary
+- Project Terms and Jargons
+- Project Dataset
+- Business Requirements
+
+### Page 2: House Price Correlation Study
+
+- Answers Business Requirements 1
+  This page contains the following:
+- Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
+- After data analysis, we agreed with stakeholders that the page will:
+  - State business requirement 1
+  - Checkbox: data inspection on customer base (display the number of rows and columns in the data, and display the first ten rows of the data)
+  - Display the most correlated variables to sale price and the conclusions
+  - Check boxes to display the heatmaps correlation analysis of individual variables against sell price.
+  - Check boxes to display the scatterplots of correlated variables against sell price.
+
+### Page 3: Project Hypothesis and Validation
+
+- Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
+
+1 - The larger the size of a property in square feet the higher the price
+
+2 - The higher the overall quality rating of the property, the higher the price
+
+3 - We suspect the more recent the construction year of the property, the higher the sale price.
+
+- Hypothesis validation: Correct. The correlation study at SalesPrice Correlation Notebook supports them.
+
+### Page 4: Predict House Price
+
+- Answers Business requirement 2 - "The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa."
+- Table displaying the profile of the four inherited houses and the house attributes.
+- Table displaying the 5 most relevant features used by the ML model for predicting house sale price.
+- The estimated individual value predicted for the 4 inherited houses
+- Predict House Prices in Ames, Iowa - 2 blocks explaining the selected features used by the ML for predicting house price.
+- Set of widgets inputs, which relates to the house profile. Each set of inputs is related to a given ML task to predict house prices.
+- "Run predictive analysis" button that serves the house price data to our ML pipelines, and predicts sale price.
+
+### Page 5: ML Prediction Metrics
+
+- ML Pipeline Performance - block explaining the steps taken to complete the ml pipeline
+- Considerations and conclusions after the pipeline is trained
+- Present ML pipeline steps
+- Feature importance plot
+- Pipeline performance
+- Predicted Price versus actual Sale Price Scatterplot
+
+---
 
 ## Unfixed Bugs
 
@@ -224,10 +262,11 @@ Although your friend has an excellent understanding of property prices in her ow
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - SkLearn(https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
+  -PPS interpretation (https://github.com/8080labs/ppscore/issues/39)
 
 ### Media
 
-- The Favicon
+- The Favicon (https://twemoji-cheatsheet.vercel.app/)
 
 ## Acknowledgements
 
