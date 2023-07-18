@@ -83,7 +83,24 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+**Mapping the business requirements:**
+
+- Business Requirement 1: Data Visualization and Correlation study
+
+  - We will inspect the data related to the house attributes using Pandas Profiling.
+  - We will conduct a correlation study using Pearson and Spearman correlation, and Predictive Power Score, to understand better how the variables are correlated to the sale price.
+  - We will select the variables to consider for studying.
+  - We will plot the main variables against sale price to visualize insights.
+
+
+- Business Requirement 2: Regression and Data Analysis
+
+  - We want to predict the house sale price from a four inherited houses and any other house in Ames, Iowa.
+  - We want to perform data cleaning, feature engineering, feature scaling, and feature selection. 
+  - We want to build a regressor ML pipeline to predict sale price..
+  - Evaluate regressor performance to meet the requirement .
+  - We want to deploy a Streamlit UI dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
+
 
 ---
 
@@ -95,7 +112,7 @@ Although your friend has an excellent understanding of property prices in her ow
 - We knew that a Supervised Regressor Model would be suitable for predicting the **Sale Price** of the houses. Since our **target** variable is a continous number.
 - Our ideal outcome is to allow our client to discover the correlation between various house attributes and sale price.
 - Also, to be able predict house sale prices of her four inherited houses and any other houses using a dashboard user inteface, in order to maximise sales for her inherited properties.
-- Having a dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between various house attributes and sale price and capability to predict the house sale price.
+- Having a dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
 - The project have followed the **CRISP-DM**(CRoss Industry Standard Process for Data Mining) workflow and have carefully considered the following steps:
 - Understanding the requirements and objectives of our client.
 - Collecting and understanding the datasets for processing.
@@ -111,6 +128,7 @@ Although your friend has an excellent understanding of property prices in her ow
 - It is assumed that this model will predict the client's inherited properties and any other houses in Ames, Iowa, using the input data feed into the dashboard widget. The prediction is made on the fly.
 - Heuristics: Currently, there is no approach to predict the house's sale price.
 - The training data to fit the model is sourced from Kaggle (See Dataset content, link above). The dataset has almost 1.5 thousand house records.
+- The project use case does not require an  NDA(Non Disclosure Agreement). Our client found a public dataset.
 - Train data - features: all variables, but target (SalesPrice)
 
 ---
