@@ -24,34 +24,6 @@ Link to deployed site:
 
 <hr>
 
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
 ## Cloud IDE Reminders
 
 To log into the Heroku toolbelt CLI:
@@ -117,7 +89,29 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+**ML task to answer the business requirement**
+
+- The objective is to create an ML model to predict and visualise the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.
+- We knew that a Supervised Regressor Model would be suitable for predicting the **Sale Price** of the houses. Since our **target** variable is a continous number.
+- Our ideal outcome is to allow our client to discover the correlation between various house attributes and sale price.
+- Also, to be able predict house sale prices of her four inherited houses and any other houses using a dashboard user inteface, in order to maximise sales for her inherited properties.
+- Having a dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between various house attributes and sale price and capability to predict the house sale price.
+- The project have followed the **CRISP-DM**(CRoss Industry Standard Process for Data Mining) workflow and have carefully considered the following steps:
+- Understanding the requirements and objectives of our client.
+- Collecting and understanding the datasets for processing.
+- Data Preparation - splitting the data into Train and Test set: data cleaning, feature engineering, feature scaling, and feature selection.
+- Modelling steps using Regressor ML Pipeline and hyperparameter optimization in order to achieve the results.
+- Evaluate regressor performance to meet the requirement -
+  We first used the default parameter, then later configured the hyperparameter for optimization and used fewer variables to deliver equivalent results.
+- Deployment - Deploy the pipeline to a cloud hosting, in our case we will deploy to Heroku.
+- The pipeline met the client's performance requirement.
+- The success metrics were R2 scores of at least 0.75 for both the Train and Test sets.
+- If the R2 score is below the client's performance requirement of 0.75 on either/ both the train and test sets, or fails to achieve the desired objectives or solve the problem it was intended to address, the ML model is considered a failure.
+- The output is defined as a continuous value for the sale price.
+- It is assumed that this model will predict the client's inherited properties and any other houses in Ames, Iowa, using the input data feed into the dashboard widget. The prediction is made on the fly.
+- Heuristics: Currently, there is no approach to predict the house's sale price.
+- The training data to fit the model is sourced from Kaggle (See Dataset content, link above). The dataset has almost 1.5 thousand house records.
+- Train data - features: all variables, but target (SalesPrice)
 
 ---
 
