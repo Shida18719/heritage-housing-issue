@@ -4,7 +4,7 @@
 
 Heritage Housing Issues is a Data Analytics and Machine Learning Web App to predict the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
 
-Link to deployed site:
+Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-price-23d98fcdef5f.herokuapp.com/)
 
 ---
 
@@ -23,18 +23,6 @@ Link to deployed site:
   - [Libraries and Packages](#libraries-and-packages)
 
 <hr>
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 
@@ -88,19 +76,17 @@ Although your friend has an excellent understanding of property prices in her ow
 - Business Requirement 1: Data Visualization and Correlation study
 
   - We will inspect the data related to the house attributes using Pandas Profiling.
-  - We will conduct a correlation study using Pearson and Spearman correlation, and Predictive Power Score, to understand better how the variables are correlated to the sale price.
+  - We will conduct a correlation study using Pearson and Spearman correlation heatmaps, and Predictive Power Score, to understand better how the variables are correlated to the sale price.
   - We will select the variables to consider for studying.
   - We will plot the main variables against sale price to visualize insights.
-
 
 - Business Requirement 2: Regression and Data Analysis
 
   - We want to predict the house sale price from a four inherited houses and any other house in Ames, Iowa.
-  - We want to perform data cleaning, feature engineering, feature scaling, and feature selection. 
+  - We want to perform data cleaning, feature engineering, feature scaling, and feature selection.
   - We want to build a regressor ML pipeline to predict sale price..
   - Evaluate regressor performance to meet the requirement .
   - We want to deploy a Streamlit UI dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
-
 
 ---
 
@@ -114,22 +100,70 @@ Although your friend has an excellent understanding of property prices in her ow
 - Also, to be able predict house sale prices of her four inherited houses and any other houses using a dashboard user inteface, in order to maximise sales for her inherited properties.
 - Having a dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
 - The project have followed the **CRISP-DM**(CRoss Industry Standard Process for Data Mining) workflow and have carefully considered the following steps:
-- Understanding the requirements and objectives of our client.
-- Collecting and understanding the datasets for processing.
-- Data Preparation - splitting the data into Train and Test set: data cleaning, feature engineering, feature scaling, and feature selection.
-- Modelling steps using Regressor ML Pipeline and hyperparameter optimization in order to achieve the results.
-- Evaluate regressor performance to meet the requirement -
-  We first used the default parameter, then later configured the hyperparameter for optimization and used fewer variables to deliver equivalent results.
-- Deployment - Deploy the pipeline to a cloud hosting, in our case we will deploy to Heroku.
+  1. Understanding the requirements and objectives of our client.
+  2. Collecting and understanding the datasets for processing.
+  3. Data Preparation - splitting the data into Train and Test set: data cleaning, feature engineering, feature scaling, and feature selection.
+  4. Modelling steps using Regressor ML Pipeline and hyperparameter optimization in order to achieve the results.
+  5. Evaluate regressor performance to meet the requirement -
+     We first used the default parameter, then later configured the hyperparameter for optimization and used fewer variables to deliver equivalent results.
+  6. Deployment - Deploy the pipeline to a cloud hosting, in our case we will deploy to Heroku.
 - The pipeline met the client's performance requirement.
 - The success metrics were R2 scores of at least 0.75 for both the Train and Test sets.
 - If the R2 score is below the client's performance requirement of 0.75 on either/ both the train and test sets, or fails to achieve the desired objectives or solve the problem it was intended to address, the ML model is considered a failure.
-- The output is defined as a continuous value for the sale price.
+- The input is the predict house sale price features and the output is defined as a continuous value for the sale price.
 - It is assumed that this model will predict the client's inherited properties and any other houses in Ames, Iowa, using the input data feed into the dashboard widget. The prediction is made on the fly.
 - Heuristics: Currently, there is no approach to predict the house's sale price.
 - The training data to fit the model is sourced from Kaggle (See Dataset content, link above). The dataset has almost 1.5 thousand house records.
-- The project use case does not require an  NDA(Non Disclosure Agreement). Our client found a public dataset.
+- The project use case does not require an NDA(Non Disclosure Agreement). Our client found a public dataset.
 - Train data - features: all variables, but target (SalesPrice)
+
+**Epics and User Stories for ML Business case**
+
+We will split these epics and user stiories using the CRISP-DM(CRoss Industry Standard Process for Data Mining)
+
+**1. Understand Business Requiremnt**
+
+| User Story                                                                                                                                              | Features                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to clearly define the purpose and objectives of the proposed requirements so that the project/client objectives are met. | Users can generate reports or dashboards that provide insights into the status of house sales price, pipeline analysis, and performance metrics. |
+|                                                                                                                                                         |
+
+**2. Collecting and understanding the datasets**
+
+| User Story                                                                                                                                       | Features                                                                                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to collect and analyse the relevant dataset, so that I can gain valuable insights and make data-driven decisions. | Users can generate reports or dashboards that provide insights into the status of house sales price and features analysis. |
+|                                                                                                                                                  |
+
+**3. Data Preparation and Visualisation**
+
+| User Story                                                                                                                                                                       | Features                                                                                                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to conduct data preparation analysis so that I can ensure clean, formatted and ready to analyse datasets suitable for the machine learning model. | Users can generate reports or dashboards that provide insights to serve business requirements, such as the visualisations from the sale price correlation study presented in tabular and graphical form. |
+|                                                                                                                                                                                  |
+
+**4. Modelling Training**
+
+| User Story                                                                                                                                                  | Features                                                                                                                       |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to efficiently train the machine, so that I can develop accurate and reliable model for predicting house price in real-time. | Users can generate reports with input of house attributes on the dashboard's widget to predict house sales price in real-time. |
+|                                                                                                                                                             |
+
+**5. Performance Evaluation**
+
+| User Story                                                                                                                                                                                            | Features                                                                                                          |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to evaluate the model performance and find the best hyperparameter for the algorithm, so that I can use the best feature that best suit the machine learning pipeline. | Users can generate prediction for the house sales price that meets their requirements in order to maximise sales. |
+|                                                                                                                                                                                                       |
+
+**6. Dashboard planning, designing, and development**
+
+| User Story                                                                                                                                                                      | Features                                                                                                                                            |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to design an intuitive dashboard, so that I can create visually appealing and informative data, and relevant datasets to populate the dashboard. | Users can access and interact with a range of visualization options, including charts, graphs, tables, etc, to represent the data in the dashboard. |
+|                                                                                                                                                                                 |
+
+[Back to the Top](#contents)
 
 ---
 
@@ -238,7 +272,23 @@ Although your friend has an excellent understanding of property prices in her ow
 - Pipeline performance
 - Predicted Price versus actual Sale Price Scatterplot
 
+[Back to the Top](#contents)
+
 ---
+
+## PEP8 Compliance Testing
+
+CI Python Linter was use to validate the python files.
+
+App Pages
+Project Summary page
+Multipage page
+No errors were detected
+
+SRC directory
+
+Data Management
+Some line too long errors - corrected
 
 ## Unfixed Bugs
 
@@ -260,6 +310,25 @@ Although your friend has an excellent understanding of property prices in her ow
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
+
+### Technologies Used
+
+* [Codeanywhere](https://app.codeanywhere.com/) IDE to develop the app.
+
+* [GitHub](https://GitHub.com/) to host the source code.
+
+* [Heroku](https://www.heroku.com/) to deploy and host the live app.
+
+* Git to provide version control (to commit and push code to the repository).
+
+* [Markdown Tables Generator](https://www.tablesgenerator.com/) to generate tables for the readme file.
+
+* [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) - to generate workspace for the project.
+
+* [CI Python Linter](https://pep8ci.herokuapp.com) to validate Python code.
+
+
+### Libraries & Packages Used
 
 - Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
@@ -287,3 +356,7 @@ I would like to show my sincere appreciation to the following people who have he
 - My family, for their understanding, for being such an important part of my life, and for making every day a little bit brighter.
 - Course provider - Code Institute.
 - The slack community, for always being there.
+
+[Back to the Top](#contents)
+
+---
