@@ -20,7 +20,8 @@ def page2_house_price_study():
 
     st.info(
         f"** Business requirement 1** \n\n"
-        f"* The client is interested in discovering how the house attributes correlate with the sale price."
+        f"* The client is interested in discovering how the house "
+        f" attributes correlate with the sale price."
     )
 
     # inspect data
@@ -34,9 +35,10 @@ def page2_house_price_study():
     st.write("---")
 
     st.write(
-        f"We conducted a correlation study in the notebook to better understand how "
-        f"the variables are correlated to the sales price. \n"
-        f"We found the following most correlated variables: **{vars_to_study}**"
+        f"We conducted a correlation study in the notebook to better "
+        f" understand how the variables are correlated to the sales price.\n "
+        f"We found the following most correlated "
+        f" variables: **{vars_to_study}**"
     )
 
     # Text based on "SalePrice Correlation" notebook - "Conclusions" section
@@ -44,14 +46,16 @@ def page2_house_price_study():
         f"**From the Scatterplot, coupled with the Correlation "
         f"and PPS analysis, we were able to draw the following insight:**\n "
         f"* There is mostly a postive correlation with houses of "
-        f"higher overall quality material and finish of the house with sales price.\n "
+        f"higher overall quality material and finish of the "
+        f" house with sales price.\n "
         f"* Large first floors, garages,above-ground living areas "
         f"and basements in square feet tend to sell for higher price.\n"
         f"* Rececently built houses tend to sell at higher prices.\n\n "
     )
 
     st.info(
-        f"* Our client expects a data visualisations of the correlated variables against the sale price."
+        f"* Our client expects a data visualisations of the correlated "
+        f" variables against the sale price."
     )
 
     st.write(
@@ -65,7 +69,8 @@ def page2_house_price_study():
     # Checkbox widget displays the Spearman correlation Heatmap
     if st.checkbox("Spearman Correlations"):
         st.write(
-            f"* This plot displays a monotonic correlation and a threshold set to 0.6 (moderate correlation).\n"
+            f"* This plot displays a monotonic correlation and a threshold "
+            f" set to 0.6 (moderate correlation).\n"
         )
         df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
         heatmap_corr(df=df_corr_spearman, threshold=0.6,
@@ -74,7 +79,8 @@ def page2_house_price_study():
     # Checkbox widget displays the Pearson correlation Heatmap
     if st.checkbox("Peason Correlations"):
         st.write(
-            f"* This plot displays a linear correlation and a threshold set to 0.6 (moderate correlation).\n"
+            f"* This plot displays a linear correlation and a threshold "
+            f" set to 0.6 (moderate correlation).\n"
         )
         df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
         heatmap_corr(df=df_corr_pearson, threshold=0.6,
@@ -93,7 +99,8 @@ def page2_house_price_study():
     st.write("---")
 
     st.write(
-        f"The scatterplots displays each selected variable against the SalePrice. "
+        f"The scatterplots displays each selected variable "
+        f" against the SalePrice. "
     )
 
     # Create a Dataframe for the Selected Variables
@@ -113,7 +120,8 @@ def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=15):
 
         fig, axes = plt.subplots(figsize=figsize)
         sns.heatmap(df, annot=True, xticklabels=True, yticklabels=True,
-                    mask=mask, cmap='viridis', annot_kws={"size": font_annot}, ax=axes,
+                    mask=mask, cmap='viridis',
+                    annot_kws={"size": font_annot}, ax=axes,
                     linewidth=0.5
                     )
         axes.set_yticklabels(df.columns, rotation=0, fontsize=20)
@@ -128,7 +136,8 @@ def heatmap_pps(df, threshold, figsize=(20, 12), font_annot=15):
         mask[abs(df) < threshold] = True
         fig, ax = plt.subplots(figsize=figsize)
         ax = sns.heatmap(df, annot=True, xticklabels=True, yticklabels=True,
-                         mask=mask, cmap='rocket_r', annot_kws={"size": font_annot},
+                         mask=mask, cmap='rocket_r',
+                         annot_kws={"size": font_annot},
                          linewidth=0.05, linecolor='grey')
         ax.set_yticklabels(df.columns, rotation=0, fontsize=20)
         ax.set_xticklabels(df.columns, fontsize=20)
@@ -151,7 +160,6 @@ def CalculateCorrAndPPS(df):
 # Functions to display scatterplots to show correlations
 def Var_corr_to_sale_price(df_to_study):
     target_var = 'SalePrice'
-    # for col in (df_to_study)# :
     for col in df_to_study.drop([target_var], axis=1).columns.to_list():
         plot_scatter(df_to_study, col, target_var)
         st.write("\n\n")

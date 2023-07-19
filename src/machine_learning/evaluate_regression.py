@@ -35,7 +35,8 @@ Regression plot evaluation
 """
 
 
-def regression_evaluation_plots(X_train, y_train, X_test, y_test, pipeline, alpha_scatter=0.5):
+def regression_evaluation_plots(
+        X_train, y_train, X_test, y_test, pipeline, alpha_scatter=0.5):
     # convert seaborn to 1-dimensional shape
     y_train = y_train.to_numpy().flatten()
     y_test = y_test.to_numpy().flatten()

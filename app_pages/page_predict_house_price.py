@@ -21,7 +21,8 @@ def page4_predict_house_price():
         f"### Business requirement 2 \n\n"
         f"The client is interested in predicting the house sale price from her"
         f" four inherited houses and any other house in Ames, Iowa. \n\n"
-        f"* The table below displays the profile of the four inherited houses.\n "
+        f"* The table below displays the profile of the "
+        f" four inherited houses.\n "
         f" Slide left and right to view the house attributes.\n\n"
     )
 
@@ -62,9 +63,11 @@ def page4_predict_house_price():
         f" will be use to predict house prices in Ames, Iowa.\n\n"
         f"* OverallQual: Rates the overall material and finish of the house"
         f" Rating from 1 (Very Poor) to 10 (Very Excellent)\n "
-        f"* GrLiveArea: Above grade (ground) living area square feet(max 11,284 sq feet)\n "
-        f"* TotalBsmtSF: Total square feet of basement area(max of 12,220 sq feet)\n "
-        f"* GarageArea: Size of garage in square feet(max of 2,836 sq feet) \n "
+        f"* GrLiveArea: Above grade (ground) living area square "
+        f" feet(max 11,284 sq feet)\n "
+        f"* TotalBsmtSF: Total square feet of basement "
+        f" area (max of 12,220 sq feet)\n "
+        f"* GarageArea: Size of garage in square feet(max of 2,836 sq feet)\n "
         f"* GarageYrBlt: Year garage was built (1900 to current year)\n"
     )
 
@@ -74,7 +77,7 @@ def page4_predict_house_price():
         f"* With a pearson of 0.79 and spearman score of 0.8, while a PPS "
         f" of 0.4 score for OverallQual.\n "
         f"* Spearman correlation 0f 0.73 and pearson score of 0.71 for "
-        f" GrLiveArea, both indicate a strong correlation with sales price. \n"
+        f" GrLiveArea, both indicate a strong correlation with sales price.\n"
     )
     X_live = DrawInputsWidgets()
 
