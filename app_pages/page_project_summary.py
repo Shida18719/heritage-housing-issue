@@ -6,19 +6,23 @@ def page1_project_summary():
     st.write("### Project Summary")
 
     st.write(
-        f" A Data Analytics and ML Web App to predict and visualise the Sales of house price\n"
-        f" from a four inherited house and any other houses within the surrounding area of Ames.\n"
+        f" A Data Analytics and ML Web App to predict and visualise "
+        f" the Sales of house price\n"
+        f" from a four inherited house and any other houses within the "
+        f" surrounding area of Ames.\n"
         f" The aim is to allow users to discover the correlation "
         f" between various house attributes and sale price.\n"
         f" Also, to predict house sale price based on selected variables.\n"
     )
 
-    # text based on README file - "Dataset Content & Business Requirements" section
+    # text based on README file - "Dataset Content & Business
+    # Requirements" section
     st.info(
         f"**Project Terms & Jargon**\n"
         f"* An **Attributes** refers to the individual characteristics or"
         f" properties that describe the house.\n "
-        f"* A **Correlation** measures the statistical relationship between two variables. "
+        f"* A **Correlation** measures the statistical relationship "
+        f" between two variables. "
         f" It quantifies the degree to which changes in one variable "
         f" are associated with changes in another variable.\n "
         f"* A **Variable** represents a characteristic or property "
@@ -41,7 +45,8 @@ def page1_project_summary():
         f" studied in correlation with the features to predict house price. "
     )
 
-    # Link to README file, so the users can have access to full project documentation
+    # Link to README file, so the users can have access to full
+    # project documentation
     st.write(
         f"* For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/Shida18719/heritage-housing-issues)."
@@ -64,7 +69,7 @@ def page1_project_summary():
         f" The client expects a dashboard for data visualisation of the "
         f" correlated variables against the sale price. \n\n"
         f"**2.** The client is interested in predicting the house sale price "
-        f" from her four inherited houses and any other house in Ames, Iowa.\n "
+        f" from her four inherited houses and any other house in Ames, Iowa.\n"
         f" This will require the use of data analytics tools and machine "
         f" learning tasks that will allow the user to interact with variables "
         f" and enable user generate price predictions. "
