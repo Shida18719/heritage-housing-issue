@@ -16,14 +16,13 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 - [ML Business Case](#ml-business-case)
 - [Hypothesis and Validation](#hypothesis-and-validation)
 - [Dashboard Design](#dashboard-design)
-- [Bugs](#bugs)
+- [Known Bugs](#known-bugs)
 - [Deployment](#deployment)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
-  - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
-  - [Libraries & Packages Used](#libraries--packages-used)
+  - [Technologies Used](#technologies-used)
+  - [Libraries and Packages Used](#libraries-and-packages-used)
 - [Credits](#credits)
-  - [Libraries and Packages](#libraries-and-packages)
 
 <hr>
 
@@ -410,6 +409,9 @@ CI Python Linter was use to validate the python files.
   - Plot no displayed after running the jupyter notebook cells
   - Model pipeline plots not displayed on the dashboard
 
+- [Stack Exchange](https://stats.stackexchange.com/questions/104622/what-does-an-actual-vs-fitted-graph-tell-us) help with understanding of the model plot.
+
+- [Kaggle Competition](https://www.youtube.com/watch?v=vtm35gVP8JU&list=WL&index=102) help with general knowledge on regression.
 
 
 ### Media
@@ -427,6 +429,7 @@ I would like to show my sincere appreciation to the following people who have he
 - The slack community, for always being there.
 - A huge thank you to Niel McEwan who has helped me with some of the errors encountered in jupyter in the SalesPrice Correlation
 notebook.
+- My mentor
 
 
 [Back to the Top](#contents)
