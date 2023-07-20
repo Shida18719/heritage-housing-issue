@@ -300,7 +300,7 @@ CI Python Linter was use to validate the python files.
 
 ---
 
-## Unfixed Bugs
+## Known Bugs
 
 - You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
 
@@ -385,19 +385,17 @@ CI Python Linter was use to validate the python files.
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A
-
 - [churnometer-walkthrough-project02](https://github.com/Shida18719/churnometer-walkthrough-project02) was of great support with uderstanding the workflow that help with completing this project. Some custom function used were taken from the churnometer.
   - Feature Engineering
   - Evaluate on Train and Test Sets for model performance evaluation
   - Assess feature importance, for assessing and graphical display of feature importance
 
 
-- [Code Institute learning material]() - Some blocks of code used have been adapter from the Learning material Scikit-Learn Unit 6: Cross Validation Search Part 2. 
+- [Code Institute learning material](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentpredictiveanalytics) - Some blocks of code used have been adapter from the Learning material Scikit-Learn Unit 6: Cross Validation Search Part 2. 
 
   - Custom Python Class for hyperparameter optimisation for testing algorithms 
 
-- [Code Institute learning material]() Exploratory Data Analysis Tools on "Predictive Power Score Unit 1".
+- [Code Institute learning material](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentpredictiveanalytics) Exploratory Data Analysis Tools on "Predictive Power Score Unit 1".
   - Custom functions for Correlation and PPS Analysis
 
 - [ExtraTreesRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor) helped with hyperparameter configuration.
@@ -408,9 +406,17 @@ CI Python Linter was use to validate the python files.
 
 - [Outlier Handling](https://feature-engine.trainindata.com/en/1.1.x/outliers/Winsorizer.html) for better general understanding of handling an outlier.
 
+- [Slack Predictive Analytics Channel](project-portfolio-5-predictive-analytics) helped with the following:
+  - Plot no displayed after running the jupyter notebook cells
+  - Model pipeline plots not displayed on the dashboard
+
+
+
 ### Media
 
-- The Favicon (https://twemoji-cheatsheet.vercel.app/)
+- [Twemoji](https://twemoji-cheatsheet.vercel.app/) used for favicon
+
+
 
 ## Acknowledgements
 
@@ -419,6 +425,9 @@ I would like to show my sincere appreciation to the following people who have he
 - My family, for their understanding, for being such an important part of my life, and for making every day a little bit brighter.
 - Course provider - Code Institute.
 - The slack community, for always being there.
+- A huge thank you to Niel McEwan who has helped me with some of the errors encountered in jupyter in the SalesPrice Correlation
+notebook.
+
 
 [Back to the Top](#contents)
 
