@@ -19,6 +19,9 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 - [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Technologies Used](#technologies-used)
+  - [Languages Used](#languages-used)
+  - [Libraries & Packages Used](#libraries--packages-used)
 - [Credits](#credits)
   - [Libraries and Packages](#libraries-and-packages)
 
@@ -321,15 +324,25 @@ CI Python Linter was use to validate the python files.
 
 ## Main Data Analysis and Machine Learning Libraries
 
+### Languages Used
+
+- Python
+
 ### Technologies Used
 
 - [Codeanywhere](https://app.codeanywhere.com/) IDE to develop the app.
 
+- [Jupyter](https://jupyter.org/) to create and conduct data analysis in multiple stages of the project
+
 - [GitHub](https://GitHub.com/) to host the source code.
+
+- [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data) to source the dataset used for this project, with the provision of an API token.
 
 - [Heroku](https://www.heroku.com/) to deploy and host the live app.
 
 - Git to provide version control (to commit and push code to the repository).
+
+- [Streamlit](https://docs.streamlit.io/library/api-reference) to visualize data in graphical and tabular form
 
 - [Markdown Tables Generator](https://www.tablesgenerator.com/) to generate tables for the readme file.
 
@@ -339,7 +352,31 @@ CI Python Linter was use to validate the python files.
 
 ### Libraries & Packages Used
 
-- Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+- [NumPy](https://numpy.org/doc/stable/user/index.html) was used across the project custom function to perform mathematical operations e.g - used in the correlation study `heatmap_corr` and `heatmap_pps` functions, basic statistical operations, such as standard deviations and mean values (in HyperparameterOptimizationSearch class),random simulation and for multidimensional arrays.
+
+- [Pandas]() was used to perform varying operations, such as:
+  - loading Loading CSV files and save files into series and Dataframes eg. Load and Inspect Kaggle data.
+  - For creating a Pandas Profiling Report for exploratory data analysis.
+  - For data preprocessing, data cleaning, such as filtering data, data transformations etc.
+
+- [MatPlotlib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) were used for creating and visualizing relationships between variables, categorical data, and statistical univariate distributions eg, countplots, scatter plots, bar plots, heatmaps and histograms.
+
+- [Predictive Power Score](https://github.com/8080labs/ppscore/issues/39) use to analyse the predictive pattern of variables with respect to the target variable (saleprice) and assess feature correlation in the correlation study.
+
+- [Scipy](https://docs.scipy.org/doc/scipy/reference/stats.html#module-scipy.stats) used in the custom function for statistical analysis plot for comparing data distribution in the feature engineering transformer.
+
+- [Feature Engine](https://feature-engine.trainindata.com/en/1.1.x/index.html) used in the preparation of data for machine the learning tasks such as:
+  - Categorical Encoding - Ordinal: replaces categories with ordinal numbers
+  - Numerical Variable Transformation - handle Numerical transformer
+  - Outlier - Winzorizer
+  - Smart Correlation Selection Variables
+
+- [SkLearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) used for machine learning tasks and predictive modeling such as:
+  - split the data set into the train and test sets
+  - Create the Regression ML Pipeline
+  - Perform Grid Search Cross Validation
+  - Assess feature importance
+  - Evaluate Model Performance
 
 ## Credits
 
@@ -349,11 +386,27 @@ CI Python Linter was use to validate the python files.
 ### Content
 
 - The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- SkLearn(https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
-  -PPS interpretation (https://github.com/8080labs/ppscore/issues/39)
-  Streamlit(https://github.com/Code-Institute-Solutions/streamlit-multipage/blob/main/1_commands_and_widgets.py)
+
+- [churnometer-walkthrough-project02](https://github.com/Shida18719/churnometer-walkthrough-project02) was of great support with uderstanding the workflow that help with completing this project. Some custom function used were taken from the churnometer.
+  - Feature Engineering
+  - Evaluate on Train and Test Sets for model performance evaluation
+  - Assess feature importance, for assessing and graphical display of feature importance
+
+
+- [Code Institute learning material]() - Some blocks of code used have been adapter from the Learning material Scikit-Learn Unit 6: Cross Validation Search Part 2. 
+
+  - Custom Python Class for hyperparameter optimisation for testing algorithms 
+
+- [Code Institute learning material]() Exploratory Data Analysis Tools on "Predictive Power Score Unit 1".
+  - Custom functions for Correlation and PPS Analysis
+
+- [ExtraTreesRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor) helped with hyperparameter configuration.
+
+- [PPS interpretation](https://github.com/8080labs/ppscore/issues/39) help with predictive power score interpretation
+
+- [Streamlit](https://github.com/Code-Institute-Solutions/streamlit-multipage/blob/main/1_commands_and_widgets.py) help with understanding using streamlit.
+
+- [Outlier Handling](https://feature-engine.trainindata.com/en/1.1.x/outliers/Winsorizer.html) for better general understanding of handling an outlier.
 
 ### Media
 
