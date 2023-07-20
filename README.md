@@ -92,7 +92,7 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## ML Business Case
 
-**ML task to answer the business requirement**
+**ML task to answer the business requirements**
 
 - The objective is to create an ML model to predict and visualise the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.
 - We knew that a Supervised Regressor Model would be suitable for predicting the **Sale Price** of the houses. Since our **target** variable is a continous number.
@@ -130,9 +130,9 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 **2. Collecting and understanding the datasets**
 
-| User Story                                                                                                                                       | Features                                                                                                                   |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| As a data practitioner, I want to collect and analyse the relevant dataset, so that I can gain valuable insights and make data-driven decisions. | Users can generate reports or dashboards that provide insights into the status of house sales price and features analysis. |
+| User Story                                                                                                                                       | Features                                                                                                                                                    |
+| :----------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to collect and analyse the relevant dataset, so that I can gain valuable insights and make data-driven decisions. | Users can run and generate reports on dashboards that provide useful insights into the status of house sales price and deliver data-driven recommendations. |
 |                                                                                                                                                  |
 
 **3. Data Preparation and Visualisation**
@@ -158,9 +158,9 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 **6. Dashboard planning, designing, and development**
 
-| User Story                                                                                                                                                                      | Features                                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| As a data practitioner, I want to design an intuitive dashboard, so that I can create visually appealing and informative data, and relevant datasets to populate the dashboard. | Users can access and interact with a range of visualization options, including charts, graphs, tables, etc, to represent the data in the dashboard. |
+| User Story                                                                                                                                                                      | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a data practitioner, I want to design an intuitive dashboard, so that I can create visually appealing and informative data, and relevant datasets to populate the dashboard. | 1. Users can access and interact with a range of visualization options, including scatterplot, heatmaps, tables, etc, to represent the data in the dashboard. <br>2. User can easily navigate through a dashboard <br>3. User can predict the house sale price from a four inherited houses and any other house in Ames, Iowa based on value of their input using the widget. <br>4. User can read the hypotheses and how they were validated in order to have a clearer understanding of the data. <br>5. User can have access to live site and predict house sales price in real-time. |
 |                                                                                                                                                                                 |
 
 [Back to the Top](#contents)
@@ -214,7 +214,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 **Interpretaion:**
 
-- Analysis indicates that the quality of the house has a relatively high correlation to the house sale price.
+- Analysis indicates that there is a price correlation in houses built after 1980, and 2000, showing a positive correlation with higher selling prices.
 
 ---
 
@@ -241,7 +241,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
   - Check boxes to display the heatmaps correlation analysis of individual variables against sell price.
   - Check boxes to display the scatterplots of correlated variables against sell price.
 
-### Page 3: Project Hypothesis and Validation
+### Page 3: Project Hypothesis and Validations
 
 - Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
 
@@ -280,15 +280,22 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 CI Python Linter was use to validate the python files.
 
-App Pages
-Project Summary page
-Multipage page
-No errors were detected
+- App Pages
+  Multipage page - No errors detected
+  Page Project Summary - No errors detected
+  page house price study - No errors detected
+  Page hypothesis - No errors detected
+  Page predict house Price - Line too long errors were detected, but were left uncorrected so as to not break links to file
+  Page modelling - Line too long errors were detected, but were left uncorrected so as to not break links to file
 
-SRC directory
+- Src directory
+  Data Management - No errors detected
+  Machine Learning Evaluate regression - No errors detected
+  Machine Learning Predictive analysis ui - No errors detected
 
-Data Management
-Some line too long errors - corrected
+- Jupyter Notebooks Testing - Errors encountered were fixed during development.
+
+---
 
 ## Unfixed Bugs
 
@@ -298,35 +305,37 @@ Some line too long errors - corrected
 
 ### Heroku
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+1. The requirements.txt file contains all the applications and dependencies that are required to run the app.
+2. The Procfile tells Heroku which files run the app and how to run it.
+3. Log in to Heroku ad create an App
+4. At the Deploy tab, select GitHub as the deployment method.
+5. Select your repository name and click Search. Once it is found, click Connect.
+6. Select the branch you want to deploy, then click Deploy Branch.
+7. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
+   Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/artic les/python-support#supported-runtimes) stack currently supported version.
+8. If the slug size is too large then add large files not required for the app to the .slugignore file.
+
+---
 
 ## Main Data Analysis and Machine Learning Libraries
 
 ### Technologies Used
 
-* [Codeanywhere](https://app.codeanywhere.com/) IDE to develop the app.
+- [Codeanywhere](https://app.codeanywhere.com/) IDE to develop the app.
 
-* [GitHub](https://GitHub.com/) to host the source code.
+- [GitHub](https://GitHub.com/) to host the source code.
 
-* [Heroku](https://www.heroku.com/) to deploy and host the live app.
+- [Heroku](https://www.heroku.com/) to deploy and host the live app.
 
-* Git to provide version control (to commit and push code to the repository).
+- Git to provide version control (to commit and push code to the repository).
 
-* [Markdown Tables Generator](https://www.tablesgenerator.com/) to generate tables for the readme file.
+- [Markdown Tables Generator](https://www.tablesgenerator.com/) to generate tables for the readme file.
 
-* [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) - to generate workspace for the project.
+- [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) - to generate workspace for the project.
 
-* [CI Python Linter](https://pep8ci.herokuapp.com) to validate Python code.
-
+- [CI Python Linter](https://pep8ci.herokuapp.com) to validate Python code.
 
 ### Libraries & Packages Used
 
@@ -344,6 +353,7 @@ Some line too long errors - corrected
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - SkLearn(https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
   -PPS interpretation (https://github.com/8080labs/ppscore/issues/39)
+  Streamlit(https://github.com/Code-Institute-Solutions/streamlit-multipage/blob/main/1_commands_and_widgets.py)
 
 ### Media
 
