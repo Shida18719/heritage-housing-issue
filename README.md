@@ -6,6 +6,7 @@ Heritage Housing Issues is a Data Analytics and Machine Learning Web App to pred
 
 Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-price-23d98fcdef5f.herokuapp.com/)
 
+
 ---
 
 ## CONTENTS
@@ -70,6 +71,7 @@ Although your friend has an excellent understanding of property prices in her ow
 - 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 - 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
+
 ---
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -90,6 +92,7 @@ Although your friend has an excellent understanding of property prices in her ow
   - We want to build a regressor ML pipeline to predict sale price..
   - Evaluate regressor performance to meet the requirement .
   - We want to deploy a Streamlit UI dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
+
 
 ---
 
@@ -168,6 +171,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 [Back to the Top](#contents)
 
+
 ---
 
 ## Hypothesis and Validation
@@ -187,6 +191,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 - Analysis indicates that the size of the house has a relatively high correlation to the house sale price.
 
+
 ---
 
 **Hypothesis 2:**
@@ -203,6 +208,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 
 - Analysis indicates that the quality of the house has a relatively high correlation to the house sale price.
 
+
 ---
 
 **Hypothesis 3:**
@@ -218,6 +224,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 **Interpretaion:**
 
 - Analysis indicates that there is a price correlation in houses built after 1980, and 2000, showing a positive correlation with higher selling prices.
+
 
 ---
 
@@ -263,19 +270,20 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 - Table displaying the 5 most relevant features used by the ML model for predicting house sale price.
 - The estimated individual value predicted for the 4 inherited houses
 - Predict House Prices in Ames, Iowa - 2 blocks explaining the selected features used by the ML for predicting house price.
-- Set of widgets inputs, which relates to the house profile. Each set of inputs is related to a given ML task to predict house prices.
+- Set of inputs widgets, which relates to the house profile. Each set of inputs is related to a given ML task to predict house prices.
 - "Run predictive analysis" button that serves the house price data to our ML pipelines, and predicts sale price.
 
 ### Page 5: ML Prediction Metrics
 
 - ML Pipeline Performance - block explaining the steps taken to complete the ml pipeline
 - Considerations and conclusions after the pipeline was trained
-- Present ML pipeline steps
+- Present Machine Learning pipeline steps
 - Feature importance plot
 - Pipeline performance
 - Predicted Price versus actual Sale Price Scatterplot
 
 [Back to the Top](#contents)
+
 
 ---
 
@@ -331,7 +339,6 @@ This page explains three hypotheses studied and their Validations.
    - Shows tables displaying house profile, most relevant features used by the ML model for predicting house sale price.
    - Estimated values and input widget
 
-
 <details><summary>click to expand</summary>
 <img src=docs-images/house-profile.png>
 <img src=docs-images/input-widget.png>
@@ -348,6 +355,7 @@ This page explains three hypotheses studied and their Validations.
 <img src=docs-images/description.png><img src=docs-images/featplot.png>
 <img src=docs-images/ml-score.png><img src=docs-images/mlplot.png>
 <details
+
 
 
 ---
@@ -372,6 +380,7 @@ CI Python Linter was use to validate the python files.
 
 - Jupyter Notebooks Testing - Errors encountered were fixed during development.
 
+
 ---
 
 ## Bugs
@@ -395,6 +404,7 @@ CI Python Linter was use to validate the python files.
 7. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
    Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/artic les/python-support#supported-runtimes) stack currently supported version.
 8. If the slug size is too large then add large files not required for the app to the .slugignore file.
+
 
 ---
 
@@ -504,6 +514,7 @@ CI Python Linter was use to validate the python files.
 
 - [Twemoji](https://twemoji-cheatsheet.vercel.app/) used for favicon
 
+
 ---
 
 
@@ -519,5 +530,6 @@ I would like to show my sincere appreciation to the following people who have he
 
 
 [Back to the Top](#contents)
+
 
 ---
