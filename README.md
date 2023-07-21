@@ -16,6 +16,7 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 - [ML Business Case](#ml-business-case)
 - [Hypothesis and Validation](#hypothesis-and-validation)
 - [Dashboard Design](#dashboard-design)
+- [Features](#features)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
@@ -277,6 +278,58 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 [Back to the Top](#contents)
 
 ---
+
+
+## Features
+
+The Streamlit dashboard is comprised of 5 pages listed on the side bar
+
+### Sidebar
+
+Sidebar: used for navigation around the dashboard.
+
+![Sidebar](docs-images/side-bar.png)
+
+
+1. ### Project Summary Page 
+
+The Project Summary Page comprises of the introductory section, the Project Terms and Jargons, Dataset information block, a link to the README file and a block describing the Business Requirements.
+
+![Summary](docs-images/summary.png)
+
+
+2. ### House Price Correlation Study Page
+
+   - This page has two blocks that answers business requirement 1.
+   - Check boxes to display dataset in tabular and graphical form when checked
+
+
+![House Price Correlation Study Page](docs-images/corr-study.png)
+
+<details><summary>click to expand</summary>
+<img src=docs-images/corr-study-inspect-dataset.png>
+<img src=docs-images/corr-study-plots-info.png>
+<img src=docs-images/spearman-correlations.png>
+<img src=docs-images/pearson-correlations.png>
+<img src=docs-images/pps.png>
+<img src=docs-images/first-three-scatter-plots.png>
+<img src=docs-images/last-four-scatter-plots.png>
+</details>
+
+
+3. ### Hypotheses and Validation Page
+
+This page explains three hypotheses studied and their Validations.
+
+
+![Hypotheses and Validation Page](docs-images/hypotheses.png)
+
+
+### Predict House Price
+
+
+---
+
 
 ## PEP8 Compliance Testing
 
