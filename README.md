@@ -1,6 +1,6 @@
 # Heritage Housing Issues
 
-![Am I responsive image](docs_images/am-i-responsive.png)
+![Am I responsive image](./docs-images/am-i-responsive.png)
 
 Heritage Housing Issues is a Data Analytics and Machine Learning Web App to predict the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
 
