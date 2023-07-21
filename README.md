@@ -1,6 +1,6 @@
 # Heritage Housing Issues
 
-![]()
+![Am I responsive image](docs_images/am-i-responsive.png)
 
 Heritage Housing Issues is a Data Analytics and Machine Learning Web App to predict the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
 
@@ -16,7 +16,7 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 - [ML Business Case](#ml-business-case)
 - [Hypothesis and Validation](#hypothesis-and-validation)
 - [Dashboard Design](#dashboard-design)
-- [Known Bugs](#known-bugs)
+- [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
   - [Languages Used](#languages-used)
@@ -299,9 +299,11 @@ CI Python Linter was use to validate the python files.
 
 ---
 
-## Known Bugs
+## Bugs
 
-- You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+- No known bugs left unfixed.
+
+
 
 ## Deployment
 
@@ -366,9 +368,10 @@ CI Python Linter was use to validate the python files.
 
 - [Feature Engine](https://feature-engine.trainindata.com/en/1.1.x/index.html) used in the preparation of data for machine the learning tasks such as:
   - Categorical Encoding - Ordinal: replaces categories with ordinal numbers
-  - Numerical Variable Transformation - handle Numerical transformer
-  - Outlier - Winzorizer
-  - Smart Correlation Selection Variables
+  - Numerical Variable Transformation - handle Numerical transformer, such as Log Transformer (base e), Power Transformer and Yeo Johnson Transformer.
+  - Outlier - Winzorizer: For handling outliers using the `capping_method='iqr` and the proximity value.
+  - Transformers were used in in an effort to help features become less abnormal or close to a normal distribution.
+  - Smart Correlation Selection Variables - To find groups of correlated features.
 
 - [SkLearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) used for machine learning tasks and predictive modeling such as:
   - split the data set into the train and test sets
@@ -376,6 +379,13 @@ CI Python Linter was use to validate the python files.
   - Perform Grid Search Cross Validation
   - Assess feature importance
   - Evaluate Model Performance
+
+
+[Back to the Top](#contents)
+
+
+---
+
 
 ## Credits
 
@@ -389,7 +399,6 @@ CI Python Linter was use to validate the python files.
   - Evaluate on Train and Test Sets for model performance evaluation
   - Assess feature importance, for assessing and graphical display of feature importance
 
-
 - [Code Institute learning material](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentpredictiveanalytics) - Some blocks of code used have been adapter from the Learning material Scikit-Learn Unit 6: Cross Validation Search Part 2. 
 
   - Custom Python Class for hyperparameter optimisation for testing algorithms 
@@ -401,7 +410,7 @@ CI Python Linter was use to validate the python files.
 
 - [PPS interpretation](https://github.com/8080labs/ppscore/issues/39) help with predictive power score interpretation
 
-- [Streamlit](https://github.com/Code-Institute-Solutions/streamlit-multipage/blob/main/1_commands_and_widgets.py) help with understanding using streamlit.
+- [Streamlit](https://github.com/Code-Institute-Solutions/streamlit-multipage/blob/main/1_commands_and_widgets.py) help with understanding using streamlit to build dashboard.
 
 - [Outlier Handling](https://feature-engine.trainindata.com/en/1.1.x/outliers/Winsorizer.html) for better general understanding of handling an outlier.
 
@@ -413,11 +422,14 @@ CI Python Linter was use to validate the python files.
 
 - [Kaggle Competition](https://www.youtube.com/watch?v=vtm35gVP8JU&list=WL&index=102) help with general knowledge on regression.
 
+- [Medium](https://medium.com/@ben.putney/list/predictive-modeling-w-python-e3668ea008e1) gave me lots of insights about predictive modelling, which was put to use in the modelling stage. 
+
 
 ### Media
 
 - [Twemoji](https://twemoji-cheatsheet.vercel.app/) used for favicon
 
+---
 
 
 ## Acknowledgements
@@ -426,10 +438,9 @@ I would like to show my sincere appreciation to the following people who have he
 
 - My family, for their understanding, for being such an important part of my life, and for making every day a little bit brighter.
 - Course provider - Code Institute.
+- My mentor, Precious Ijege, for his support.
 - The slack community, for always being there.
-- A huge thank you to Niel McEwan who has helped me with some of the errors encountered in jupyter in the SalesPrice Correlation
-notebook.
-- My mentor
+- A huge thank you to Niel McEwan who has helped me with some of the errors encountered in jupyter Notebook in the SalesPrice Correlation Notebook.
 
 
 [Back to the Top](#contents)
