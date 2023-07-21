@@ -269,7 +269,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 ### Page 5: ML Prediction Metrics
 
 - ML Pipeline Performance - block explaining the steps taken to complete the ml pipeline
-- Considerations and conclusions after the pipeline is trained
+- Considerations and conclusions after the pipeline was trained
 - Present ML pipeline steps
 - Feature importance plot
 - Pipeline performance
@@ -325,7 +325,29 @@ This page explains three hypotheses studied and their Validations.
 ![Hypotheses and Validation Page](docs-images/hypotheses.png)
 
 
-### Predict House Price
+4. ### Predict House Price Page
+
+   - This page Answers Business requirement 2 
+   - Shows tables displaying house profile, most relevant features used by the ML model for predicting house sale price.
+   - Estimated values and input widget
+
+
+<details><summary>click to expand</summary>
+<img src=docs-images/house-profile.png>
+<img src=docs-images/input-widget.png>
+<details
+
+
+5. ### Modelling and Evaluation Page
+
+   - This page displays the ml pipeline performance
+   - Feature importance the model was trained on
+   - The evaluation score and the regression plots
+
+<details><summary>click to expand</summary>
+<img src=docs-images/description.png><img src=docs-images/featplot.png>
+<img src=docs-images/ml-score.png><img src=docs-images/mlplot.png>
+<details
 
 
 ---
@@ -336,17 +358,17 @@ This page explains three hypotheses studied and their Validations.
 CI Python Linter was use to validate the python files.
 
 - App Pages
-  Multipage page - No errors detected
-  Page Project Summary - No errors detected
-  page house price study - No errors detected
-  Page hypothesis - No errors detected
-  Page predict house Price - Line too long errors were detected, but were left uncorrected so as to not break links to file
-  Page modelling - Line too long errors were detected, but were left uncorrected so as to not break links to file
+  - Multipage page - No errors detected
+  - Page Project Summary - No errors detected
+  - page house price study - No errors detected
+  - Page hypothesis - No errors detected
+  - Page predict house Price - Line too long errors were detected, but were left uncorrected so as to not break links to file
+  - Page modelling - Line too long errors were detected, but were left uncorrected so as to not break links to file
 
 - Src directory
-  Data Management - No errors detected
-  Machine Learning Evaluate regression - No errors detected
-  Machine Learning Predictive analysis ui - No errors detected
+  - Data Management - No errors detected
+  - Machine Learning Evaluate regression - No errors detected
+  - Machine Learning Predictive analysis ui - No errors detected
 
 - Jupyter Notebooks Testing - Errors encountered were fixed during development.
 
