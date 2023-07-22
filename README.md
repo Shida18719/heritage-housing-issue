@@ -342,7 +342,7 @@ This page explains three hypotheses studied and their Validations.
     <details><summary>click to expand</summary>
     <img src=docs-images/house-profile.png>
     <img src=docs-images/input-widget.png>
-    <details
+    <details>
 
 
 5. ### Modelling and Evaluation Page
@@ -354,7 +354,7 @@ This page explains three hypotheses studied and their Validations.
     <details><summary>click to expand</summary>
     <img src=docs-images/description.png><img src=docs-images/featplot.png>
     <img src=docs-images/ml-score.png><img src=docs-images/mlplot.png>
-    <details
+    <details>
 
 
 
