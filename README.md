@@ -11,7 +11,7 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 
 ## CONTENTS
 
-- [Dataset](#dataset)
+- [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 - [ML Business Case](#ml-business-case)
