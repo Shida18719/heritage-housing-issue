@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
+from datetime import date
 from src.data_management import load_house_data, load_pkl_file
 from src.machine_learning.predictive_analysis_ui import predict_house_price
-from datetime import date
 
 
 def page4_predict_house_price():
@@ -84,6 +84,22 @@ def page4_predict_house_price():
     if st.button("Run Predictive Analysis"):
         price_prediction = predict_house_price(
             X_live, house_features, regressor_pipe)
+
+        # Create a logic to display the results and currency value in Dollar
+        price = price_prediction
+        value = float(price.round(1))
+
+        amount = '${:,.2f}'.format(value)
+
+        statement = (
+            f"* Based on the input values, we estimate this house "
+            f" to be worth **{amount}**"
+        )
+
+        # Return price prediction value for house price
+        st.write(statement)
+
+        # st.write(price)
 
 
 # Create input widgets to feed the data values to df for predictions
