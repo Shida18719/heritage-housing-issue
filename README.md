@@ -474,9 +474,6 @@ CI Python Linter was use to validate the python files.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
 
 - [churnometer-walkthrough-project02](https://github.com/Shida18719/churnometer-walkthrough-project02) was of great support with understanding the workflow that help with completing this project. Some custom function used were taken from the churnometer.
