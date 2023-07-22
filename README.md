@@ -2,7 +2,7 @@
 
 ![Am I responsive image](./docs-images/am-i-responsive.png)
 
-Heritage Housing Issues is a Data Analytics and Machine Learning Web App to predict the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
+Heritage Housing Issues is a Data Analytics and Machine Learning Web App that predicts house price sales from four inherited houses and any other houses within the surrounding area of Ames. The project has been developed as part of a Portfolio Project of my Predictive Analytics studies, a Project-5 at Code Institute.
 
 Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-price-23d98fcdef5f.herokuapp.com/)
 
@@ -89,8 +89,8 @@ Although your friend has an excellent understanding of property prices in her ow
 
   - We want to predict the house sale price from a four inherited houses and any other house in Ames, Iowa.
   - We want to perform data cleaning, feature engineering, feature scaling, and feature selection.
-  - We want to build a regressor ML pipeline to predict sale price..
-  - Evaluate regressor performance to meet the requirement .
+  - We want to build a regressor ML pipeline to predict sale price.
+  - Evaluate regressor performance to meet the requirement.
   - We want to deploy a Streamlit UI dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
 
 
@@ -101,13 +101,13 @@ Although your friend has an excellent understanding of property prices in her ow
 **ML task to answer the business requirements**
 
 - The objective is to create an ML model to predict and visualise the Sales of house price from a four inherited house and any other houses within the surrounding area of Ames.
-- We knew that a Supervised Regressor Model would be suitable for predicting the **Sale Price** of the houses. Since our **target** variable is a continous number.
+- We knew that a Supervised Regressor Model would be suitable for predicting the **Sale Price** of the houses. Since our **target** variable is a continuous number.
 - Our ideal outcome is to allow our client to discover the correlation between various house attributes and sale price.
-- Also, to be able predict house sale prices of her four inherited houses and any other houses using a dashboard user inteface, in order to maximise sales for her inherited properties.
+- Also, to be able predict house sale prices of her four inherited houses and any other houses using a dashboard user interface, in order to maximise sales for her inherited properties.
 - Having a dashboard that meets the business requirements, where the client is able to view a display of the study showing the correlation between relevance house attributes and sale price and capability to predict the house sale price.
 - The project have followed the **CRISP-DM**(CRoss Industry Standard Process for Data Mining) workflow and have carefully considered the following steps:
   1. Understanding the requirements and objectives of our client.
-  2. Collecting and understanding the datasets for processing.
+  2. Collect and understand the datasets for processing.
   3. Data Preparation - splitting the data into Train and Test set: data cleaning, feature engineering, feature scaling, and feature selection.
   4. Modelling steps using Regressor ML Pipeline and hyperparameter optimization in order to achieve the results.
   5. Evaluate regressor performance to meet the requirement -
@@ -116,7 +116,7 @@ Although your friend has an excellent understanding of property prices in her ow
 - The pipeline met the client's performance requirement.
 - The success metrics were R2 scores of at least 0.75 for both the Train and Test sets.
 - If the R2 score is below the client's performance requirement of 0.75 on either/ both the train and test sets, or fails to achieve the desired objectives or solve the problem it was intended to address, the ML model is considered a failure.
-- The input is the predict house sale price features and the output is defined as a continuous value for the sale price.
+- The input is the predicted house sale price features and the output is defined as a continuous value for the sale price.
 - It is assumed that this model will predict the client's inherited properties and any other houses in Ames, Iowa, using the input data feed into the dashboard widget. The prediction is made on the fly.
 - Heuristics: Currently, there is no approach to predict the house's sale price.
 - The training data to fit the model is sourced from Kaggle (See Dataset content, link above). The dataset has almost 1.5 thousand house records.
@@ -125,9 +125,9 @@ Although your friend has an excellent understanding of property prices in her ow
 
 **Epics and User Stories for ML Business case**
 
-We will split these epics and user stiories using the CRISP-DM(CRoss Industry Standard Process for Data Mining)
+We will split these epics and user stories using the CRISP-DM(CRoss Industry Standard Process for Data Mining)
 
-**1. Understand Business Requiremnt**
+**1. Understand Business Requirements**
 
 | User Story                                                                                                                                              | Features                                                                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -187,7 +187,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 - This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
 - We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:**
+**Interpretation:**
 
 - Analysis indicates that the size of the house has a relatively high correlation to the house sale price.
 
@@ -204,7 +204,7 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 - This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
 - We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:**
+**Interpretation:**
 
 - Analysis indicates that the quality of the house has a relatively high correlation to the house sale price.
 
@@ -214,14 +214,14 @@ We will split these epics and user stiories using the CRISP-DM(CRoss Industry St
 **Hypothesis 3:**
 
 - The most recently constructed house, has significant positive correlation with the sale price.
-  - we were able to observe if this feature is a factor that influences price.
+  - We were able to observe if this feature is a factor that influences price.
 
 **Validation process:**
 
 - This hypothesis was tested and validated using statistical analysis and machine learning techniques to analysing the dataset of house feature and sale prices.
 - We visualized the data using scatter plots, Correlations Study and Predictive Power Score (PPS) heatmaps to identify any initial trends or patterns.
 
-**Interpretaion:**
+**Interpretation:**
 
 - Analysis indicates that there is a price correlation in houses built after 1980, and 2000, showing a positive correlation with higher selling prices.
 
@@ -296,7 +296,7 @@ The Streamlit dashboard is comprised of 5 pages listed on the side bar
 
 Sidebar: used for navigation around the dashboard.
 
-![Sidebar](docs-images/side-bar.png)
+  ![Sidebar](docs-images/side-bar.png)
 
 
 1. ### Project Summary Page 
@@ -339,10 +339,10 @@ This page explains three hypotheses studied and their Validations.
    - Shows tables displaying house profile, most relevant features used by the ML model for predicting house sale price.
    - Estimated values and input widget
 
-<details><summary>click to expand</summary>
-<img src=docs-images/house-profile.png>
-<img src=docs-images/input-widget.png>
-<details
+    <details><summary>click to expand</summary>
+    <img src=docs-images/house-profile.png>
+    <img src=docs-images/input-widget.png>
+    <details
 
 
 5. ### Modelling and Evaluation Page
@@ -351,10 +351,10 @@ This page explains three hypotheses studied and their Validations.
    - Feature importance the model was trained on
    - The evaluation score and the regression plots
 
-<details><summary>click to expand</summary>
-<img src=docs-images/description.png><img src=docs-images/featplot.png>
-<img src=docs-images/ml-score.png><img src=docs-images/mlplot.png>
-<details
+    <details><summary>click to expand</summary>
+    <img src=docs-images/description.png><img src=docs-images/featplot.png>
+    <img src=docs-images/ml-score.png><img src=docs-images/mlplot.png>
+    <details
 
 
 
@@ -441,7 +441,7 @@ CI Python Linter was use to validate the python files.
 - [NumPy](https://numpy.org/doc/stable/user/index.html) was used across the project custom function to perform mathematical operations e.g - used in the correlation study `heatmap_corr` and `heatmap_pps` functions, basic statistical operations, such as standard deviations and mean values (in HyperparameterOptimizationSearch class),random simulation and for multidimensional arrays.
 
 - [Pandas]() was used to perform varying operations, such as:
-  - loading Loading CSV files and save files into series and Dataframes eg. Load and Inspect Kaggle data.
+  - Loading CSV files and save files into series and Dataframes eg. Load and Inspect Kaggle data.
   - For creating a Pandas Profiling Report for exploratory data analysis.
   - For data preprocessing, data cleaning, such as filtering data, data transformations etc.
 
@@ -458,7 +458,7 @@ CI Python Linter was use to validate the python files.
   - Transformers were used in in an effort to help features become less abnormal or close to a normal distribution.
   - Smart Correlation Selection Variables - To find groups of correlated features.
 
-- [SkLearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) used for machine learning tasks and predictive modeling such as:
+- [SkLearn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) used for machine learning tasks and predictive modelling such as:
   - split the data set into the train and test sets
   - Create the Regression ML Pipeline
   - Perform Grid Search Cross Validation
@@ -479,7 +479,7 @@ CI Python Linter was use to validate the python files.
 
 ### Content
 
-- [churnometer-walkthrough-project02](https://github.com/Shida18719/churnometer-walkthrough-project02) was of great support with uderstanding the workflow that help with completing this project. Some custom function used were taken from the churnometer.
+- [churnometer-walkthrough-project02](https://github.com/Shida18719/churnometer-walkthrough-project02) was of great support with understanding the workflow that help with completing this project. Some custom function used were taken from the churnometer.
   - Feature Engineering
   - Evaluate on Train and Test Sets for model performance evaluation
   - Assess feature importance, for assessing and graphical display of feature importance
