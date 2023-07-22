@@ -11,22 +11,5 @@ def predict_house_price(X_live, house_features, regressor_pipe):
 
     # Predict
 
-    price_prediction_proba = regressor_pipe.predict(X_live)
-
-    # Create a logic to display the results and currency value in Dollar
-
-    proba = price_prediction_proba
-
-    value = float(proba.round(1))
-
-    amount = '${:,.2f}'.format(value)
-
-    statement = (
-        f"* Based on the input values, we estimate this house "
-        f" to be worth **{amount}**"
-    )
-
-    # Return price prediction value for house price
-    st.write(statement)
-
-    st.write(proba)
+    price_prediction = regressor_pipe.predict(X_live)
+    return price_prediction
