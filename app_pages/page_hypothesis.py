@@ -17,7 +17,8 @@ def page3_hypothesis_and_validation():
 
     # conclusions taken from "02 - Correlation Study" notebook
     st.success(
-        f"**Hypothesis 1** - The larger the size of a property "
+        "#### Hypothesis 1\n\n "
+        f"The larger the size of a property "
         f" in square feet the higher the price\n\n"
 
         f"**Variable study**: Studying the correlations between the size "
@@ -37,7 +38,8 @@ def page3_hypothesis_and_validation():
         f" the sale prices generally tend to be higher.  "
         f" This supports our first hypothesis. \n\n"
 
-        f"**Hypothesis 2** - The higher the overall quality rating of "
+        "#### Hypothesis 2\n\n "
+        f" The higher the overall quality rating of "
         f" the property, the higher the price \n\n"
 
         f"**Variable study**: Studying the correlations between the rating "
@@ -55,7 +57,8 @@ def page3_hypothesis_and_validation():
         f"* The scatter plots shows the highest priced houses were ranked "
         f" of the highest Overall Quality. \n\n"
 
-        f"**Hypothesis 3** - We suspect the more recent the construction year "
+        "#### Hypothesis 3\n\n "
+        f" We suspect the more recent the construction year "
         f" of the property, the higher the sale price.\n\n "
 
         f"**Variable study**: We studied data regarding the year houses "
@@ -74,7 +77,7 @@ def page3_hypothesis_and_validation():
         f" a moderate predictive correlation with sales price.\n"
         f"* The scatter plot, coupled with the Correlation and PPS analysis,"
         f" shows the that there is a price correlation in houses built after "
-        f" 1980, and 2000, showing a positive correlation with "
+        f" 1980, and 2000, showing a positive correlation "
         f" with a higher selling price."
         f" These insights thus support our study. "
     )
