@@ -99,8 +99,6 @@ def page4_predict_house_price():
         # Return price prediction value for house price
         st.write(statement)
 
-        # st.write(price)
-
 
 # Create input widgets to feed the data values to df for predictions
 def DrawInputsWidgets():
