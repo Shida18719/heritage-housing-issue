@@ -38,7 +38,7 @@ def page4_predict_house_price():
     st.success(
         f" The table below displays the 5 most relevant features "
         f" used by the ML model for predicting house sale price. \n"
-        f" Ths features will be required by our client in order to maximize "
+        f" These features will be required by our client in order to maximize "
         f" sale price on her inherited houses \n\n"
     )
 
@@ -74,9 +74,9 @@ def page4_predict_house_price():
     st.success(
         f" OverallQual and GrLiveArea has the most significant relative "
         f" correlation with the house sale price prediction.\n "
-        f"* With a pearson of 0.79 and spearman score of 0.8, while a PPS "
+        f"* With a Pearson of 0.79 and Spearman score of 0.8, while a PPS "
         f" of 0.4 score for OverallQual.\n "
-        f"* Spearman correlation 0f 0.73 and pearson score of 0.71 for "
+        f"* Spearman correlation 0f 0.73 and Pearson score of 0.71 for "
         f" GrLiveArea, both indicate a strong correlation with sales price.\n"
     )
     X_live = DrawInputsWidgets()

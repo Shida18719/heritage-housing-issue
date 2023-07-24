@@ -29,8 +29,8 @@ def page1_project_summary():
         f" that can take different values.\n "
         f"* An **ML** focuses on developing algorithms and models that "
         f" enable computer systems to learn from data and make predictions"
-        f"* or decisions without being explicitly programmed. \n "
-        f"* An **Hypothesis** is a testable statement about the "
+        f" or decisions without being explicitly programmed. \n "
+        f"* **Hypothesis** is a testable statement about the "
         f" relationship between two or more variables or a proposed "
         f" explanation for some observed phenomenon.\n\n "
         f"**Project Dataset**\n"
@@ -54,7 +54,7 @@ def page1_project_summary():
 
     # copied from README file - "Business Requirements" section
     st.success(
-        f" A friend who lives in another country who has recieved inheritance "
+        f" A friend who lives in another country who has received inheritance "
         f" from deceased great grandfather in Ames, Iowa "
         f" is not familiar with the property prices in the USA "
         f" and fears that basing her estimates for property worth on her "
@@ -62,7 +62,7 @@ def page1_project_summary():
         f" We have been requested by our client to help in maximising the "
         f" sales price for the inherited properties. "
         f" We were provided with a public dataset house prices for Ames, Iowa,"
-        f" and our client will like two business requirements be fufilled.\n\n"
+        f" and our client will like 2 business requirements be fulfilled.\n\n"
         f"** The 2 business requirements are:** \n\n"
         f"**1.** The client is interested in discovering how the house "
         f" attributes correlate with the sale price.\n "

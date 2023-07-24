@@ -45,12 +45,12 @@ def page2_house_price_study():
     st.info(
         f"**From the Scatterplot, coupled with the Correlation "
         f"and PPS analysis, we were able to draw the following insight:**\n "
-        f"* There is mostly a postive correlation with houses of "
-        f"higher overall quality material and finish of the "
+        f"* There is mostly a positive correlation with houses of "
+        f" higher overall quality material and finish of the "
         f" house with sales price.\n "
-        f"* Large first floors, garages,above-ground living areas "
+        f"* Large first floors, garages, above-ground living areas "
         f"and basements in square feet tend to sell for higher price.\n"
-        f"* Rececently built houses tend to sell at higher prices.\n\n "
+        f"* Recently built houses tend to sell at higher prices.\n\n "
     )
 
     st.info(
