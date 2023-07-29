@@ -81,7 +81,9 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ---
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+
+## Rationale to map the business requirements to the Data Visualisations and ML tasks
+
 
 **Mapping the business requirements:**
 
