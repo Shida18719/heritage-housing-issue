@@ -9,6 +9,13 @@ Link to deployed App: [Heritage Housing Issues](https://predict-heritage-house-p
 
 ---
 
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Shida18719/heritage-housing-issues?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Shida18719/heritage-housing-issues?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Shida18719/heritage-housing-issues?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/Shida18719/heritage-housing-issues?style=for-the-badge)
+
+
 ## CONTENTS
 
 - [Dataset Content](#dataset-content)
