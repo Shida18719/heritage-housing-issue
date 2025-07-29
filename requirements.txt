@@ -20,7 +20,7 @@ matplotlib==3.3.1
 missingno==0.5.2
 multimethod==1.9.1
 networkx==3.1
-numpy==1.18.5
+numpy>=1.18.5
 pandas==1.4.2
 pandas-profiling==3.1.0
 patsy==0.5.3
@@ -40,7 +40,8 @@ scikit-learn==0.24.2
 scipy==1.9.3
 seaborn==0.11.0
 statsmodels==0.14.0
-streamlit==0.85.0
+# streamlit==0.85.0
+streamlit>=1.0.0
 tangled-up-in-unicode==0.1.0
 threadpoolctl==3.1.0
 toml==0.10.2
