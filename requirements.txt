@@ -33,9 +33,9 @@ phik==0.12.3
 Pillow==9.5.0
 plotly==4.12.0
 
-# ppscore>=1.3.0
+ppscore
 
-ppscore --only-binary=:all:
+# ppscore --only-binary=:all:
 protobuf==3.20.0
 pyarrow==12.0.1
 pydantic==1.10.9
