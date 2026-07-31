@@ -9,7 +9,7 @@ from src.machine_learning.evaluate_regression import (
 def page5_modelling_and_evaluation():
 
     # load pipeline files
-    version = 'v2'
+    version = 'v3'
     house_price_pipe = load_pkl_file(
         f"outputs/ml_pipeline/predict_saleprice/{version}/best_regressor_pipeline.pkl")
     feat_importance = plt.imread(

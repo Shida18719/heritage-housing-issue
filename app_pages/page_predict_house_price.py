@@ -8,7 +8,7 @@ from src.machine_learning.predictive_analysis_ui import predict_house_price
 def page4_predict_house_price():
 
     # load required files for predicting house price
-    version = 'v2'
+    version = 'v3'
     regressor_pipe = load_pkl_file(
         f"outputs/ml_pipeline/predict_saleprice/{version}/best_regressor_pipeline.pkl")
     house_features = (pd.read_csv(
@@ -108,8 +108,8 @@ def DrawInputsWidgets():
     percentageMin, percentageMax = 0.4, 2.0
 
     # Create input widgets for the five best features in two rows
-    col1, col2 = st.beta_columns(2)
-    col3, col4, col5 = st.beta_columns(3)
+    col1, col2 = st.columns(2)
+    col3, col4, col5 = st.columns(3)
 
     # Create an empty DataFrame, for the live data
     X_live = pd.DataFrame([], index=[0])

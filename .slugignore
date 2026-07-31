@@ -1,2 +1,6 @@
 README.md
 docs-images/*
+jupyter_notebooks/*
+outputs/datasets/cleaned/*
+outputs/ml_pipeline/predict_saleprice/v1/*
+outputs/ml_pipeline/predict_saleprice/v2/*

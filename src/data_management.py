@@ -6,7 +6,7 @@ import joblib
 
 # Code adapted from the Churnometer walkthrough project by Code Institute.
 # Create dataframe with house data
-@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+@st.cache_data
 def load_house_data():
     df = pd.read_csv("outputs/datasets/collection/HousePricesRecords.csv")
     return df

@@ -114,7 +114,7 @@ def page2_house_price_study():
 # Displays heatmaps for correlation and PPS
 def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=15):
     if len(df.columns) > 1:
-        mask = np.zeros_like(df, dtype=np.bool)
+        mask = np.zeros_like(df, dtype=bool)
         mask[np.triu_indices_from(mask)] = True
         mask[abs(df) < threshold] = True
 
@@ -132,7 +132,7 @@ def heatmap_corr(df, threshold, figsize=(20, 12), font_annot=15):
 
 def heatmap_pps(df, threshold, figsize=(20, 12), font_annot=15):
     if len(df.columns) > 1:
-        mask = np.zeros_like(df, dtype=np.bool)
+        mask = np.zeros_like(df, dtype=bool)
         mask[abs(df) < threshold] = True
         fig, ax = plt.subplots(figsize=figsize)
         ax = sns.heatmap(df, annot=True, xticklabels=True, yticklabels=True,
@@ -147,8 +147,8 @@ def heatmap_pps(df, threshold, figsize=(20, 12), font_annot=15):
 
 # Function to calculate correlations and PPS
 def CalculateCorrAndPPS(df):
-    df_corr_spearman = df.corr(method="spearman")
-    df_corr_pearson = df.corr(method="pearson")
+    df_corr_spearman = df.corr(method="spearman", numeric_only=True)
+    df_corr_pearson = df.corr(method="pearson", numeric_only=True)
 
     pps_matrix_raw = pps.matrix(df)
     pps_matrix = pps_matrix_raw.filter(['x', 'y', 'ppscore']).pivot(
